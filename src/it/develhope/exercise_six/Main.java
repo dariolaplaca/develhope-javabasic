@@ -60,7 +60,7 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
         /*
-        *   If we add any primitive to a String they will just auto-cast to string
+        *   If we add any primitive to a String they will just auto-cast to string and concatenates all of them in the string
         *
         *   If we add an int to a double the int will auto-cast to a double
         *   If we add an int and a char it will give an int representing the Unicode of the char plus the int added
@@ -69,7 +69,7 @@ public class Main {
         *
         *   If we add a char and a double it will auto cast the char to Unicode and then sum it to the double
         * */
-        String textFrom2Primitives = "All the behaviours examined"; // <--- Edit this line
+        String textFrom2Primitives = "" + 2 + 2.5 + true + 'd'; // <--- Edit this line
         System.out.println(textFrom2Primitives);
     }
 
