@@ -1,3 +1,4 @@
+package it.develhope.exercise_three;
 public class Main {
     public static void main(String[] args) {
         exercise1();

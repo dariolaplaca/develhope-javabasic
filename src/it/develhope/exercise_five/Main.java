@@ -1,4 +1,4 @@
-package esercizio5;
+package it.develhope.exercise_five;
 
 public class Main {
     // Don't forget to use comments to clear things up if you need them!

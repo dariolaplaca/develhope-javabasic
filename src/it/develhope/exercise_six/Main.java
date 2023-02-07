@@ -1,4 +1,4 @@
-package esercizio6;
+package it.develhope.exercise_six;
 
 public class Main {
     public static void main(String[] args) {

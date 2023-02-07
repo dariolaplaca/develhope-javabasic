@@ -1,4 +1,4 @@
-package it.develhope;
+package it.develhope.exercise_eigth;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,8 +35,8 @@ public class Main {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
-        double remainingMoney = 15.0;
-        double lunchCost = 5.0;
+        double remainingMoney = 20.0;
+        double lunchCost = 29.0;
 
         // Your if statement here
         if(remainingMoney >= lunchCost){
@@ -60,8 +60,18 @@ public class Main {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-        double ourDouble = 3.5;
+        double ourDouble = 0.5;
         //Write your code here
+        if(ourDouble > 2.5d){
+            System.out.println("Greater than");
+        } else {
+            ourDouble += 1.0d;
+            if(ourDouble < 2.5d){
+                System.out.println("Still less than");
+            } else {
+                System.out.println("Now greater than");
+            }
+        }
     }
 
 
@@ -79,8 +89,19 @@ public class Main {
     private static void exercise4() {
         System.out.println("\nExercise 4:");
 
-        int employeeAge = 30;
+        int employeeAge = 70;
 
         //Write your if statement here
+        if(employeeAge >= 65){
+            System.out.println("Retired");
+        }
+        else if(35 <= employeeAge && employeeAge < 65){
+            System.out.println("Experienced Worker");
+        }
+        else if(18 <= employeeAge && employeeAge < 35){
+            System.out.println("New Worker");
+        } else {
+            System.out.println("School age");
+        }
     }
 }
