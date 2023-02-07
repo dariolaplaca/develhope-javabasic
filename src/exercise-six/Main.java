@@ -59,8 +59,17 @@ public class Main {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-
-        String textFrom2Primitives = "" + 2 + 2.5; // <--- Edit this line
+        /*
+        *   If we add any primitive to a String they will just auto-cast to string
+        *
+        *   If we add an int to a double the int will auto-cast to a double
+        *   If we add an int and a char it will give an int representing the Unicode of the char plus the int added
+        *
+        *   If we add a boolean to any type of primitive it will give a compile-time error since there will be a mismatch error
+        *
+        *   If we add a char and a double it will auto cast the char to Unicode and then sum it to the double
+        * */
+        String textFrom2Primitives = "All the behaviours examined"; // <--- Edit this line
         System.out.println(textFrom2Primitives);
     }
 
@@ -78,7 +87,7 @@ public class Main {
         String middleNumbers = "       4 5 6";
         String earlyNumbers = "1 2 3";
 
-        System.out.println(); // <--- Write your code here
+        System.out.println(earlyNumbers + " " +middleNumbers.trim() + " " + endNumbers); // <--- Write your code here
     }
 
 
