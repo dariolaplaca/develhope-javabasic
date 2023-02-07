@@ -1,4 +1,4 @@
-package javabasics._7;
+package esercizio6;
 
 public class Main {
     public static void main(String[] args) {
@@ -60,7 +60,7 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
-        String textFrom2Primitives = ""; // <--- Edit this line
+        String textFrom2Primitives = "" + 2 + 2.5; // <--- Edit this line
         System.out.println(textFrom2Primitives);
     }
 

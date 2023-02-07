@@ -1,4 +1,4 @@
-package javabasics._6;
+package esercizio5;
 
 public class Main {
     // Don't forget to use comments to clear things up if you need them!
