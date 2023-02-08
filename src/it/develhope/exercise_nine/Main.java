@@ -31,7 +31,7 @@ public class Main {
         boolean wearingShorts = true;
 
         // Write your code here
-        if((isWarm && wearingShorts) || (!isWarm && !wearingShorts)){
+        if(!(isWarm ^ wearingShorts)){
             System.out.println("Comfortable clothes");
         } else {
             System.out.println("Uncomfortable clothes");
@@ -108,7 +108,7 @@ public class Main {
      */
     private static void exercise4Bonus() {
         System.out.println("\nExercise 4 (Optional) - One way road:");
-        boolean carIsDrivingFromLeftToRight = true;
+        boolean carIsDrivingFromLeftToRight = true ;
         boolean carIsDrivingFromRightToLeft = false;
 
         if(carIsDrivingFromLeftToRight ^ carIsDrivingFromRightToLeft){
