@@ -113,9 +113,9 @@ public class Main {
             case 13 -> System.out.println("This is the 6th largest prime number under 20");
             case 11 -> System.out.println("This is the 5th largest prime number under 20");
             case 7 -> System.out.println("This is the 4th largest prime number under 20");
-            case 5 -> System.out.println("This is the 3th largest prime number under 20");
-            case 3 -> System.out.println("This is the 2th largest prime number under 20");
-            case 2 -> System.out.println("This is the 1th largest prime number under 20");
+            case 5 -> System.out.println("This is the 3rd largest prime number under 20");
+            case 3 -> System.out.println("This is the 2nd largest prime number under 20");
+            case 2 -> System.out.println("This is the 1st largest prime number under 20");
             default -> System.out.println("Invalid entry");
         }
     }
