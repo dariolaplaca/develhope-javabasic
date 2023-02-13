@@ -19,16 +19,15 @@ public class Main {
      * return the appropriate result type
      *
      */
-    static String convertCelsiusToFahrenheit(){
+    static String convertCelsiusToFahrenheit(double celsius){
         // Put this into a function
-        double celsius = 30;
         double fahrenheit = ((celsius * 9) / 5) + 32;
         return celsius + " Celsius is " + fahrenheit + " fahrenheit";
     }
 
     private static void exercise1() {
         System.out.println("Exercise 1:");
-        System.out.println(convertCelsiusToFahrenheit());
+        System.out.println(convertCelsiusToFahrenheit(30));
     }
 
     /**
