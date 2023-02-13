@@ -1,4 +1,4 @@
-package it.develhope2.oop.exercise_one;
+package it.oop.exercise_one;
 
 import java.util.Arrays;
 import java.util.List;

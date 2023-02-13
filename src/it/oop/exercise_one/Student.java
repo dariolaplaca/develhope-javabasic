@@ -1,4 +1,4 @@
-package it.develhope2.oop.exercise_one;
+package it.oop.exercise_one;
 
 public class Student {
     String name;
