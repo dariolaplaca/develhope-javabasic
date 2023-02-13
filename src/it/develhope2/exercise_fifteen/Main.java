@@ -90,15 +90,15 @@ public class Main {
      * A Example: fori
      *
      * Q1: A user inputs their actions into an ATM, they can withdraw, deposit, check balance or exit. What loop should we use?
-     * A1: do while
+     * A1: do while, because the user must choose at least one action but can continue to choose more actions afterwards
      *
      * Q2: We have a list of 1000 users to send emails to
-     * A2: for each
+     * A2: for each, because we have to send mails to all the users in the list
      *
      * Q3: We want to print out the first 80 customer names from our bank database
-     * A3: for i
+     * A3: for i, we would want to print out the first 80 customer, but we don't know the full size of the list
      *
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
-     * A4: while
+     * A4: while, If there are no more lines to read, the loop breaks. So as far as we don't know the full size of the file it's more suitable the use of the while
      */
 }

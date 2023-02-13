@@ -77,5 +77,6 @@ public class Exercises {
         averageStudentsAge /= backEndDevelhopeCourse.students.size();
         System.out.println("The average student's age is " + averageStudentsAge);
         // Write your code here
+
     }
 }
