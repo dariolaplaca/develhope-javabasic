@@ -74,8 +74,7 @@ public class Exercises {
         for(int i = 0; i < backEndDevelhopeCourse.students.size(); i++){
             averageStudentsAge += backEndDevelhopeCourse.students.get(i).age;
         }
-        System.out.println(backEndDevelhopeCourse.students.size());
-        averageStudentsAge /= backEndDevelhopeCourse.students.size() + 1;
+        averageStudentsAge /= backEndDevelhopeCourse.students.size();
         System.out.println("The average student's age is " + averageStudentsAge);
         // Write your code here
 
