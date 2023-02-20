@@ -10,7 +10,6 @@ public class Main {
         exercise2();
         exercise3();
     }
-
     /**
      * 1: Take the code below and put it into a function, read the code and see what it is.
      * <p>
