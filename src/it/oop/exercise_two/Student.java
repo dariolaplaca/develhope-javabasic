@@ -1,8 +1,8 @@
 package it.oop.exercise_two;
 
 public class Student {
-    String name;
-    int age;
+    public String name;
+    public int age;
 
     public Student(String name, int age){
         System.out.println("Constructing!");
