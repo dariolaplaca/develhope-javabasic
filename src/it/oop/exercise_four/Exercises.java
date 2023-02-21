@@ -1,5 +1,6 @@
 package it.oop.exercise_four;
 
+import java.time.DayOfWeek;
 import java.util.Random;
 
 public class Exercises {
@@ -42,6 +43,7 @@ public class Exercises {
         System.out.println("\nExercise 2:");
         ExerciseLunch exerciseLunch = new ExerciseLunch(3.4, "Tuesday");
         exerciseLunch.setLunchWeightInGrams(500);
+        exerciseLunch.setNameOfDayEaten("March");
         System.out.println("Lunch on " + exerciseLunch.getNameOfDayEaten() + " cost " + exerciseLunch.getPrice());
     }
 
@@ -51,8 +53,7 @@ public class Exercises {
      *    Only make edits that remove or add the words, static or final
      */
     public static void exercise3() {
-        ExerciseLunch exerciseLunch = null;
-        exerciseLunch = new ExerciseLunch(3.4, "Tuesday");
+        ExerciseLunch exerciseLunch = new ExerciseLunch(3.4, "Tuesday");
         ExerciseLunch.printMaxPrice();
     }
 

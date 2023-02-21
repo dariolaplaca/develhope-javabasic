@@ -1,11 +1,18 @@
 package it.oop.exercise_four;
 
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.Date;
+
 public class ExerciseLunch {
     private Double price = null;
     private String nameOfDayEaten = null;
     private int lunchWeightInGrams;
+    LocalDate myDate;
 
     private static final double MAX_PRICE = 5;
+    private static final double MINIMUM_WEIGHT = 0;
 
     private int numberOfTimesWeHaveGotPrice = 0;
 
@@ -51,16 +58,26 @@ public class ExerciseLunch {
         return lunchWeightInGrams;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
-    }
-
     public void setNameOfDayEaten(String nameOfDayEaten) {
-        this.nameOfDayEaten = nameOfDayEaten;
+        String isADay = "";
+        try{
+            isADay = DayOfWeek.valueOf(nameOfDayEaten.toUpperCase()).toString();
+        } catch (Exception IllegalArgumentException){
+            isADay =  "Not a day";
+        }
+        if(nameOfDayEaten.toUpperCase().equals(isADay)){
+            this.nameOfDayEaten = nameOfDayEaten;
+        } else {
+            System.out.println("Not a day!");
+        }
     }
 
     public void setLunchWeightInGrams(int lunchWeightInGrams) {
-        this.lunchWeightInGrams = lunchWeightInGrams;
+        if(lunchWeightInGrams > MINIMUM_WEIGHT){
+            this.lunchWeightInGrams = lunchWeightInGrams;
+        } else {
+            System.out.println("Weight can't be a negative value!");
+        }
     }
 
     private void setNumberOfTimesWeHaveGotPrice(int numberOfTimesWeHaveGotPrice) {
