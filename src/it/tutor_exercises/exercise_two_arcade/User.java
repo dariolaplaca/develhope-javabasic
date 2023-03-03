@@ -21,4 +21,13 @@ public class User {
     public void setUsername(String username) {
         this.username = username;
     }
+
+    public User returnUser(){
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return username;
+    }
 }

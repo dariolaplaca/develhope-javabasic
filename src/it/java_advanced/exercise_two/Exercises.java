@@ -44,13 +44,14 @@ public class Exercises {
         menuCostsInEuro.put("Burger", 8.50);
 
         String mostExpensiveMenuItemName = null;
-        double mostExpensivePrice = Integer.MIN_VALUE;
+
 
         // 2a. Loop over the map entries with menuCostsInEuro.entrySet()
         //     and set out the most expensive items name
         //     use for(Map.Entry<String, Double> entry : menuCostsInEuro.entrySet()) and entry.getKey and entry.getValue
         //     to do so
 
+        double mostExpensivePrice = Integer.MIN_VALUE;
         for(Map.Entry<String, Double> entry : menuCostsInEuro.entrySet()){
             if(entry.getValue() > mostExpensivePrice){
                 mostExpensivePrice = entry.getValue();

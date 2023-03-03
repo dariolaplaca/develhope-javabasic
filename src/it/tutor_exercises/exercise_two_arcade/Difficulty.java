@@ -14,7 +14,7 @@ public enum Difficulty {
         this.scoreModifier = scoreModifier;
     }
 
-    public int getDifficulty(){
+    public int difficultyMultiplier(){
         return this.scoreModifier;
     }
 }

@@ -1,6 +1,7 @@
 package it.tutor_exercises.exercise_two_arcade;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Videogame {
 
@@ -45,6 +46,17 @@ public class Videogame {
     // Questo metodo aggiunge un utente ed un punteggio alla classifica locale
     public void addScore(User user, int score){
         this.localScoreboard.put(user, score);
+    }
+
+    public void printLocalScoreboard(){
+        int index = 0;
+        final int POSITIONS_TO_ITERATE = 3;
+        System.out.println("\n\t\t" + this.name);
+        for(Map.Entry<User, Integer> entry : localScoreboard.entrySet()){
+            System.out.println("\t" + entry.getKey() + ":" + entry.getValue());
+            index++;
+            if (index == POSITIONS_TO_ITERATE){break;}
+        }
     }
 
 
