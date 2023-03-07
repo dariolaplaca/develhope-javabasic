@@ -111,15 +111,14 @@ public class Arcade {
     public LinkedList<User> getTopThree(){
         TreeMap<Integer, HashSet<User>> treeMap = new TreeMap<>(Collections.reverseOrder());
         for(Map.Entry<User, Integer> entry : globalScoreBoard.entrySet()){
+            HashSet<User> oldSet;
             if(treeMap.containsKey(entry.getValue())){
-                HashSet<User> oldSet = treeMap.get(entry.getKey());
-                oldSet.add(entry.getKey());
-                treeMap.put(entry.getValue(), oldSet);
+                oldSet = treeMap.get(entry.getKey());
             } else {
-                HashSet<User> oldSet = new HashSet<>();
-                oldSet.add(entry.getKey());
-                treeMap.put(entry.getValue(), oldSet);
+                oldSet = new HashSet<>();
             }
+            oldSet.add(entry.getKey());
+            treeMap.put(entry.getValue(), oldSet);
         }
         LinkedList<User> finalOutput = new LinkedList<>();
         int i = 0;
@@ -135,32 +134,6 @@ public class Arcade {
         return finalOutput;
     }
 
-    public LinkedList<User> getTopThree2(){
-        TreeMap<Integer, HashSet<User>> treeMap = new TreeMap<>(Collections.reverseOrder());
-        for(Map.Entry<User, Integer> entry : globalScoreBoard.entrySet()){
-            if(treeMap.containsKey(entry.getValue())){
-                HashSet<User> oldSet = treeMap.get(entry.getKey());
-                oldSet.add(entry.getKey());
-                treeMap.put(entry.getValue(), oldSet);
-            } else {
-                HashSet<User> oldSet = new HashSet<>();
-                oldSet.add(entry.getKey());
-                treeMap.put(entry.getValue(), oldSet);
-            }
-        }
-        LinkedList<User> finalOutput = new LinkedList<>();
-        int i = 0;
-        for(Map.Entry<Integer, HashSet<User>> entry : treeMap.entrySet()){
-            HashSet<User> currentSet = entry.getValue();
-            for(User u : currentSet){
-                finalOutput.add(u);
-                i++;
-                if(i == 3){break;}
-            }
-            if(i == 3){break;}
-        }
-        return finalOutput;
-    }
 
 
 }
