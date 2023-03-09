@@ -80,7 +80,8 @@ public class Exercises {
         double num1 = 10.0;
         String num2AsString = "0.0";
         try{
-            if(num1/Double.parseDouble(num2AsString) == Double.POSITIVE_INFINITY || num1/Double.parseDouble(num2AsString) == Double.NEGATIVE_INFINITY || Double.isNaN(num1 / Double.parseDouble(num2AsString))){
+            double result = num1/Double.parseDouble(num2AsString);
+            if(result == Double.POSITIVE_INFINITY || result == Double.NEGATIVE_INFINITY || Double.isNaN(result)){
                 throw new ArithmeticException();
             }
             System.out.println(num1/Double.parseDouble(num2AsString));
