@@ -88,6 +88,10 @@ class CalculatorTest {
         Assertions.assertEquals(1, c.power(0, 0));
         Assertions.assertEquals(100, c.power(-10, 2));
         Assertions.assertEquals(-1000, c.power(-10, 3));
+
+        Assertions.assertTrue(Double.isFinite(c.power(-2, 4)));
+        Assertions.assertTrue(Double.isInfinite(c.power(100000, 1000000000)));
+        Assertions.assertFalse(Double.isFinite(c.power(100000, 1000000000)));
         // Your code here
     }
 }
