@@ -1,0 +1,87 @@
+// Smiling face with heart-eyes
+String emoji_smiling_heart_eyes = "\uD83D\uDE0D";
+
+// Face blowing a kiss
+String emoji_blowing_kiss = "\uD83D\uDE18";
+
+// Thumbs up sign
+String emoji_thumbs_up = "\uD83D\uDC4D";
+
+// Clapping hands sign
+String emoji_clapping_hands = "\uD83D\uDC4F";
+
+// Face with tears of joy
+String emoji_face_with_tears_of_joy = "\uD83D\uDE02";
+
+// Rolling on the floor laughing
+String emoji_rolling_on_floor_laughing = "\uD83E\uDD23";
+
+// OK hand sign
+String emoji_ok_hand = "\uD83D\uDC4C";
+
+// Fire
+String emoji_fire = "\uD83D\uDD25";
+
+// Party popper
+String emoji_party_popper = "\uD83C\uDF89";
+
+// Red heart
+String emoji_red_heart = "\uD83D\uDC9E";
+
+// Sparkles
+String emoji_sparkles = "\u2728";
+
+// Smiling face with sunglasses
+String emoji_smiling_sunglasses = "\uD83D\uDE0E";
+
+// Rocket
+String emoji_rocket = "\uD83D\uDE80";
+
+// Money bag
+String emoji_money_bag = "\uD83D\uDCB0";
+
+// Wrapped gift
+String emoji_wrapped_gift = "\uD83C\uDF81";
+
+// Globe with meridians
+String emoji_globe_meridians = "\uD83C\uDF10";
+
+// Smiling face with smiling eyes
+String emoji_smiling_smiling_eyes = "\uD83D\uDE04";
+
+// Loudly crying face
+String emoji_loudly_crying_face = "\uD83D\uDE2D";
+
+// Beer mug
+String emoji_beer_mug = "\uD83C\uDF7A";
+
+// Hamburger
+String emoji_hamburger = "\uD83C\uDF54";
+
+// Pizza
+String emoji_pizza = "\uD83C\uDF55";
+
+// Tada
+String emoji_tada = "\uD83C\uDF89";
+
+// See-no-evil monkey
+String emoji_see_no_evil_monkey = "\uD83D\uDE48";
+
+// Hear-no-evil monkey
+String emoji_hear_no_evil_monkey = "\uD83D\uDE49";
+
+// Speak-no-evil monkey
+String emoji_speak_no_evil_monkey = "\uD83D\uDE4A";
+
+//FOOD
+private static final String EMOJI_PIZZA = "\uD83C\uDF55";
+private static final String EMOJI_BURGER = "\uD83C\uDF54";
+private static final String EMOJI_TACO = "\uD83C\uDF2E";
+private static final String EMOJI_SUSHI = "\uD83C\uDF63";
+private static final String EMOJI_SPAGHETTI = "\uD83C\uDF5D";
+private static final String EMOJI_ICE_CREAM = "\uD83C\uDF68";
+private static final String EMOJI_CAKE = "\uD83C\uDF70";
+private static final String EMOJI_COFFEE = "\u2615";
+private static final String EMOJI_TEA = "\uD83C\uDF75";
+private static final String EMOJI_BEER = "\uD83C\uDF7A";
+private static final String EMOJI_WINE = "\uD83C\uDF77";
