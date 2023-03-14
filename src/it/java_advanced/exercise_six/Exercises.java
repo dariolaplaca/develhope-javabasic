@@ -121,17 +121,16 @@ public class Exercises {
     }
 
     public static TrafficLight getNextState(TrafficLight currentLight){
-        int nextState = currentLight.getState();
-        nextState++;
+        int nextState = currentLight.getState() + 1;
         if(nextState > 2){
             nextState = 0;
         }
-        switch(nextState){
-            case 0 -> {return TrafficLight.GREEN;}
-            case 1 -> {return TrafficLight.YELLOW;}
-            case 2 -> {return TrafficLight.RED;}
-            default -> {return currentLight;}
+        for(TrafficLight t : TrafficLight.values()){
+            if(nextState == t.getState()){
+                return t;
+            }
         }
+        return currentLight;
     }
 
     /**
